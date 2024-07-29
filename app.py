@@ -21,8 +21,8 @@ import streamlit.components.v1 as components
 #         st.switch_page("pages/page1.py")
 #     except Exception as e:
 #         st.error(f"There is an issue with your credentials: ({e}).\nPlease try again.")
-
-kibana_url = st.secrets['KIBANA_DASHBOARD_URL']
-components.iframe(kibana_url, height=600, scrolling=True)
+#
+# kibana_url = st.secrets['KIBANA_DASHBOARD_URL']
+# components.iframe(kibana_url, height=600, scrolling=True)
 looker_url = st.secrets['LOOKER_DASHBOARD_URL']
 components.iframe(looker_url, height=600, scrolling=True)
