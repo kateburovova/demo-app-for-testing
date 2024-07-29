@@ -25,4 +25,4 @@ import streamlit.components.v1 as components
 kibana_url = st.secrets['KIBANA_DASHBOARD_URL']
 components.iframe(kibana_url, height=600, scrolling=True)
 looker_url = st.secrets['LOOKER_DASHBOARD_URL']
-components.iframe(kibana_url, height=600, scrolling=True)
+components.iframe(looker_url, height=600, scrolling=True)
