@@ -6,6 +6,9 @@ try:
         st.write('Hi')
         kibana_url = st.secrets['KIBANA_DASHBOARD_URL']
         components.iframe(kibana_url, height=600, scrolling=True)
+        looker_url = st.secrets['LOOKER_DASHBOARD_URL']
+        components.iframe(kibana_url, height=600, scrolling=True)
+
     else:
         st.write('User not recognised')
 except Exception as e:
